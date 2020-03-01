@@ -52,3 +52,6 @@ print(arr[0])
 print(arr[2]) # To check if error statement works
 
 
+for i in range(1000):
+    arr.append(i)
+    print(arr.capacity)

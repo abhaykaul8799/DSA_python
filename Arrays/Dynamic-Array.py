@@ -1,3 +1,12 @@
+'''
+
+To create a dummy representation of the dynamic nature of arrays
+in python.
+
+'''
+
+
+
 import ctypes
 
 class DynamicArray():

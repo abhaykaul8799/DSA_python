@@ -53,3 +53,4 @@ class AnagramTest(object):
 t = AnagramTest()
 t.test(anagram_check)
 t.test(anagram_check2)
+print(anagram_check("clint eastwood,"))

@@ -24,6 +24,7 @@ def balance_check(s):
             else:
                 temp.append(brac)
     return len(temp) == 0
+    
 
 def balance_check2(s):
     if len(s) %2 != 0:

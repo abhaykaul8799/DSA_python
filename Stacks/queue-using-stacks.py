@@ -11,11 +11,10 @@ class Queue2Stacks:
         self.stack2 = []
     
     def enqueue(self,element):
-        if self.stack2 == []:
-            self.stack1.append(element)
-        else:
-            while self.stack2 != []:
-                self.stack1.append(self.stack2.pop())
+        
+        while self.stack2 != []:
+            self.stack1.append(self.stack2.pop())
+        self.stack1.append(element)
     
     def dequeue(self):
         while self.stack1 != []:

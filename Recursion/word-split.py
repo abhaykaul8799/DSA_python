@@ -21,6 +21,23 @@ def word_split(phrase,list_of_words,output=None):
 	return output
 
 
-print(word_split('themanran',['clown','man','ran']))
-print(word_split('themanran',['man','ran','the']))
-print(word_split('thegoodman',['bad','nice','good','average','the','a','an','man','woman']))
+ans = word_split('themanran',['clown','man','ran'])
+if sum(list(map(len,ans))) == len('themanran'):
+	print(ans)
+else:
+	print([])
+ans = word_split('clownthemanran',['clown','man','ran'])
+if sum(list(map(len,ans))) == len('themanran'):
+	print(ans)
+else:
+	print([])
+ans = word_split('themanran',['man','ran','the'])
+if sum(list(map(len,ans))) == len('themanran'):
+	print(ans)
+else:
+	print([])
+ans = word_split('thegoodman',['bad','nice','good','average','the','a','an','man','woman'])
+if sum(list(map(len,ans))) == len('thegoodman'):
+	print(ans)
+else:
+	print([])

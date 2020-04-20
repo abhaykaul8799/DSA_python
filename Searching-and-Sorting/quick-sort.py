@@ -8,6 +8,7 @@ def quick_sort(arr):
     quick_sort_helper(arr,0,len(arr)-1)
 
 def quick_sort_helper(arr,first,last):
+    
     if first<last:
         splitpoint = partition(arr,first,last)
         quick_sort_helper(arr,first,splitpoint-1)

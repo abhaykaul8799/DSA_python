@@ -29,7 +29,7 @@ class HashTable:
                 while self.slots[nextslot] != None and self.slots[nextslot] != key:
                     nextslot = self.rehash(nextslot,len(self.slots))
                     count += 1
-                    if count == len(self.slots) * 2:
+                    if count == len(self.slots):
                         break
                 if self.slots[nextslot] == None:
                     self.slots[nextslot] = key

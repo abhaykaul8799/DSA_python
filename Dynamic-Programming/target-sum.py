@@ -10,6 +10,15 @@ For example:
 
 '''
 
+'''
+
+Given an array, if we see it, even though the operatiors
+may seem placed haphazardly, if rearranged, they can be 
+split into two subsets. So, s1-s2-s3+s4 = k can be split into
+(s1+s4) - (s3+s2) => S1 - S2 = k, basically becoming subset
+difference problem.
+
+'''
 def targetSum(arr,val):
     total = sum(arr)
     tar = (total + val)//2

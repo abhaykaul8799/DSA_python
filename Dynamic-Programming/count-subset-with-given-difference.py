@@ -12,6 +12,19 @@ For example:
 
 '''
 
+'''
+
+We are given that, s1 - s2 = k
+also, s1 + s2 = totalsum
+adding these two, we get, 
+2*s1 = total + k
+s1 = (total + k)//2
+so, if we can find s1, there is
+definitely an s2 which satisfies
+s1 - s2 = k
+
+'''
+
 def countSubsetDiff(arr,k):
 
     total = sum(arr)

@@ -12,6 +12,26 @@ For example:
 
 from numpy import array
 
+'''
+
+The main approach to this problem is that, 
+we have to minimize s1 - s2. So, we are given
+s2 - s1 = k
+s2 + s1 = total sum of the array
+so if we check all the possible sums till the sum of
+the array, and from the middle of that, check if any
+subset sum is available, it would result in the min.
+subset difference.
+
+For example:
+    dp[-1] = [1,2,3,4,5,6,7,8,9,10]
+             [T,T,T,T,F,T,T,T,T,T] 
+    if s1 = 5, definitely s2 = 5, because s1 + s2 = 10
+    but there is no subset with sum = 5, so we go to 4,
+    as s1 = 4, s2 = 6, min diff is 2. Any other number 
+    will only give difference bigger than this number.  
+
+'''
 def minimumSubsetSum(arr):
     total = sum(arr)
     allSums = subsetSum(arr,total)

@@ -1,4 +1,6 @@
 # DSA_python
 DSA in Python language
 
-Following the course: https://www.udemy.com/course/python-for-data-structures-algorithms-and-interviews and GFG.
+Following are the references: 
+1. https://www.udemy.com/course/python-for-data-structures-algorithms-and-interviews (Implementing DSA in python)
+2. https://www.youtube.com/channel/UC5WO7o71wvxMxEtLRkPhiQQ (Great explinations on Dynamic Programming)
